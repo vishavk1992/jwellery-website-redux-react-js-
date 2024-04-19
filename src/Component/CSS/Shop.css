@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.Title{
+    text-align: center;
+}
+.btn-1{
+    width:100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color:rgb(142, 77, 77);
+    color: white;
+    font-size: 20px;
+}
+.col-md-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem 1rem;
+    width:100%;
+}
+.row-mt-5{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.col-md-3{
+    width:22%;
+}
+.col-md-9{
+    width:75%;
+}
+
+

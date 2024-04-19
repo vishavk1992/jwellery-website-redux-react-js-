@@ -1,0 +1,477 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.services-group{
+display: inline-block;
+width: 33%;
+background-color: #61dafb;
+
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  width:1170px;
+  margin:auto;
+}
+.container2{
+  width:1140px;
+  height: 190px;
+  margin: auto;
+  text-align: center!important;  
+
+}
+.space{
+  padding:60px 0;
+
+}
+img{
+  max-width: 100%;
+}
+li{
+  list-style: none;
+}
+p{
+  font-size: 18px;
+}
+h3{
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+h1{
+  font-size:60px;
+  margin-bottom: 30px;
+}
+h2{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+a{
+  text-decoration: none;
+  color:rgb(27, 26, 26);  
+}
+/* header{
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+} */
+.top-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:10px 15px;
+  color:rgb(21, 21, 21);
+  align-items: center;
+}
+.submenu{
+  display: none;
+  position: absolute;
+  top:100%;
+  left:0;
+  padding:10px 0;
+  right:0;
+  width: 200px;
+  background-color: rgb(242, 243, 243);
+}
+.submenu li{
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.submenu li a{
+  font-size: 18px;
+}
+.submenu li i{
+  color: red;
+  padding-right: 10px;
+}
+.nav-bar>ul>li:hover .submenu{
+  display: block;
+}
+
+.nav-bar>ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+.nav-bar> ul> li{
+  padding:0 20px;
+  position: relative;
+  font-size: 20px;
+
+}
+.nav-bar ul li:hover{
+  background-color: red;
+}
+.nav-bar>ul>li>a{
+  color: rgb(23, 22, 22);
+  display: block;
+  padding : 20px 0;
+}
+.icon ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+/* .icon li:nth-of-type(3) a{
+  padding:15px;
+ 
+} */
+.icon i{
+  font-size: 20px;
+}
+.icon a{
+  padding-right:15px;
+  color: rgb(25, 25, 25);
+}
+
+/* //==============================BANNER BLOCK =========================================/// */
+.banner-block{
+  background-image: url(./Component/images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:700px;
+  background-position:top;
+}
+.title-block{
+  text-align:left;
+  margin-bottom: 40px;
+  padding-top:100px; 
+}
+.title-block a{
+  padding:20px;
+  background: rgb(199, 26, 26);
+  color: white;
+}
+/* //============================== Category -block =========================================/// */
+.cat-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem 10rem;
+  text-align: center;
+}
+.cat-image img{
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgb(81, 80, 80);
+  padding: 10px;
+}
+.cat-image{
+  padding: 10px;
+  
+}
+
+/* //============================== Collection -block =========================================/// */
+.coll-title{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.coll-title h3{
+color: red;
+}
+.collection-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem 1rem;
+}
+.collection-row{
+  border:1px solid grey;
+  border-radius: 15px;
+}
+
+.coll-image img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  padding: 5px;
+}
+.coll-image{
+  position: relative;
+}
+.image-content{
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity: 0;
+  transition: all .5s ease;  
+}
+.coll-image:hover .image-content{
+  opacity: 1;
+}
+.image-content ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;   
+}
+.image-content ul li{
+  padding-right: 15px;
+}
+.coll-content{
+  background-color: aliceblue;
+  padding-left:10px;
+  border-radius: 15px;
+}
+
+
+/* //============================== SERVICES -block =========================================/// */
+.services-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem 2rem;
+}
+.services-info img{
+  width:70px;
+  height:70px;
+  margin-bottom: 15px;
+}
+.services-info{
+  text-align: center;
+}
+/* //============================== offer -block =========================================/// */
+
+.offer-block{
+  background-image: url(./Component/images/crown-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:700px;
+  background-position:center;
+  object-fit: cover;
+  background-attachment: fixed;
+  
+}
+.offer-block h1{
+  color: red;
+  
+}
+.offer-block h2{
+  font-size: 50px;
+  
+}
+
+/* //============================== Product-block =========================================/// */
+.label2{
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  text-transform: uppercase; 
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+  z-index: 1;        
+}
+
+.label1{
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  left: 7px;
+  top: 7px;
+  padding: 12px 6px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+
+}
+/* //============================== Instagram -block =========================================/// */
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  position: relative;
+  overflow: hidden;
+  
+}
+.image img{
+  width:100%;
+}
+.gallery a{
+  width:14.2%;
+}
+
+.overlay{
+  position: absolute;
+  top:0;
+  height: 100%;
+  width:100%;
+  background-color: rgba(239, 96, 96, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  opacity: 0;  
+  transition: .5s ease;        
+}
+.overlay:hover{
+  opacity: 1;
+  transform: scale(3) rotate(90deg);
+}
+
+/* =======================================FOOTER======================== */
+.container-fluid{
+  width:100%;
+  padding-right:10px;
+  padding-left: 10px;
+  border:20px solid rgb(227, 224, 224);
+}
+.aboutus-coln{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem 1rem;
+  text-align: center;
+}
+.logo-list ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.logo-list li{
+  padding:0px 20px;
+}
+.logo-img{
+  margin-bottom: 20px;
+}
+.aboutus-info{
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+.col-1{
+  width:100%;
+}
+/* /////////////////////////////////////////////////////// */
+.subscribe{
+  background-color:#ff4c3b;
+ text-align: center;
+ padding:50px;
+}
+.subcribe-form input{
+  padding:10px 10px;
+  width:100%;
+  text-align: center;
+}
+.subcribe-form button{
+  margin-top:10px;
+  padding:15px 25px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+}
+.store-info{
+  padding:50px;
+}
+.store-info ul li{
+  padding-bottom:10px;
+}
+/* ////////////////////////////////////////////////////////////// */
+.account-content ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.account-content ul li{
+  padding-right: 20px;
+}
+.account-info{
+  padding: 30px;
+}
+
+/* /////////////////////////////footer-2nd row///////////////////////////////////// */
+.footer-bottom{
+  background-color: rgb(30, 30, 30);
+  color: white;
+  padding:20px;
+}
+
+/* ///////////////////////////////////SHOP PAGE/////////////////////////////////// */
+
+.list{
+  text-align: left;
+  
+}
+.search{
+  font-size: 25px;
+}
+.search input{
+  width:30%;
+  height:2.5rem;
+  padding:10px;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.add-to-cart img{
+  width:60px;
+  height:60px,
+}
+/* //////////////////////////login//////////////////// */
+.px-4, .py-3{
+  margin: auto;
+  width:50%;
+  font-size: 25px;
+  border : 1px solid black;
+  margin-bottom: 30px;
+}
